@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: url(back.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* width:100%;
+    justify-content: center;
+    align-items: center; */
+}
+/* a img{
+    width: 100%;
+    justify-content: center;
+} */
+nav{
+    background: #0082e6;
+    height: 80px;
+   width: 100%;
+}
+label.Logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 91px;
+    font-weight: bolder;
+}
+nav ul{
+ float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height:80px ;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: gold;
+    font-size: 17px;
+    padding:7px 13px;
+    text-transform: uppercase;
+    border-radius: 90px;
+}
+a.active,a:hover{
+    /* color:red;  */
+    background: #1b9bff;
+    transition: 0.3s;
+    
+}
+.checkbtn{
+    font-size: 30px;
+    color: red;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: block;
+}
+img{
+    width: 70px;
+    margin-top:14px ;
+    margin-left: 10px;
+    height: 50px;
+    margin-right: 100px;
+    position: absolute;
+}
+#check{
+    float: right;
+    margin: 30px;
+    display: none;
+}
+@media (max-width:952px){
+    
+    
+    nav ul li {
+        
+        font-size: 16px;
+    }
+    label.Logo{
+        padding-left:   150px;
+        font-size: 30px;
+    }
+}
+@media (max-width:858px){
+.checkbtn{
+    display: block;
+
+}
+#check{
+    display: block;}
+ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left:-100%;
+    text-align: center;
+    transition: all 1s;
+}
+nav ul li{
+    display: block;
+    margin: 50px 0;
+}
+
+nav ul li a{
+    font-size: 20px;
+}
+a:hover, a.active{
+    background: none;
+    color: #0082e6;
+
+}
+#check:checked ~ ul{
+left: 0;
+transition: all .1s;
+}
+}
+section{
+    /* background: url(back.jpg) no-repeat; */
+    
+    background-size:cover ;
+    height: calc(100vh - 80px);
+}
